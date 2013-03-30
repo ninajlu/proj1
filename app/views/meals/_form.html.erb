@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :type %><br />
-    <%= f.text_field :type %>
+    <%= f.text_area :type %>
   </div>
   <div class="field">
     <%= f.label :start %><br />
@@ -23,7 +23,7 @@
     <%= f.label :end %><br />
     <%= f.time_select :end %>
   </div>
-    <div class="control-group">
+   <div class="control-group">
     <%= f.label :venue_id, class: 'control-label' %><br />
     <%= f.collection_selection :venue_id, Venue.all, :id, :name %>
   </div>

@@ -1,12 +1,12 @@
 Proj1::Application.routes.draw do
+  resources :meals
+
+
   root :to =>'meals#index'
   resources :ratings
 
 
   resources :venues
-
-
-  resources :meals
 
 
   resources :users

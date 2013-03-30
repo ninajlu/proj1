@@ -14,9 +14,12 @@
   <b>End:</b>
   <%= @meal.end %>
 </p>
- <b>Venue:</b>
+
+<p>
+  <b>Venue:</b>
   <%= @meal.meal_venue %>
 </p>
+
 
 <%= link_to 'Edit', edit_meal_path(@meal) %> |
 <%= link_to 'Back', meals_path %>
