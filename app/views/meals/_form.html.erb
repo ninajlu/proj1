@@ -23,6 +23,10 @@
     <%= f.label :end %><br />
     <%= f.time_select :end %>
   </div>
+    <div class="control-group">
+    <%= f.label :venue_id, class: 'control-label' %><br />
+    <%= f.collection_selection :venue_id, Venue.all, :id, :name %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
