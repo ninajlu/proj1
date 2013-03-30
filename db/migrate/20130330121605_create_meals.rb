@@ -4,7 +4,7 @@ class CreateMeals < ActiveRecord::Migration
       t.string :type
       t.time :start
       t.time :end
-
+      t.belongs_to :venue
       t.timestamps
     end
   end

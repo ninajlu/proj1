@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20130330122032) do
     t.string   "type"
     t.time     "start"
     t.time     "end"
+    t.integer  "venue_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
