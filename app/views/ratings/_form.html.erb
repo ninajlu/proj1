@@ -17,7 +17,7 @@
   </div>
   <div class="control-group">
     <%= f.label :venue_id, class: 'control-label' %><br />
-    <%= f.collection_selection :venue_id, Venue.all, :id, :name %>
+    <%= f.collection_select :venue_id, Venue.all, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :user %><br />
@@ -29,7 +29,7 @@
   </div>
   <div class="control-group">
     <%= f.label :meal_id, class: 'control-label'%><br />
-    <%= f.collection_selection :meal_id, Meal.all, :id, :type %>
+    <%= f.collection_select :meal_id, Meal.all, :id, :type %>
   </div>
   <div class="field">
     <%= f.label :posted %><br />

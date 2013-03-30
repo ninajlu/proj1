@@ -1,6 +1,5 @@
 class CreateMeals < ActiveRecord::Migration
   def change
-    drop_table :meals
     create_table :meals do |t|
       t.text :type
       t.time :start
