@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Rate:</b>
+  <%= @rating.rate %>
+</p>
+
+<p>
+  <b>Venue:</b>
+  <%= @rating.venue %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @rating.user %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @rating.comments %>
+</p>
+
+<p>
+  <b>Meal:</b>
+  <%= @rating.meal %>
+</p>
+
+<p>
+  <b>Posted:</b>
+  <%= @rating.posted %>
+</p>
+
+
+<%= link_to 'Edit', edit_rating_path(@rating) %> |
+<%= link_to 'Back', ratings_path %>
