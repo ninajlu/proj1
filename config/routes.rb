@@ -1,4 +1,5 @@
 Proj1::Application.routes.draw do
+  root :to =>'venues#index'
   resources :ratings
 
 
